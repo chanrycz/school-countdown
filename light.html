@@ -23,6 +23,7 @@
          font-weight: 700; 
          font-size: 2em; 
          margin-bottom: 0px;
+         margin-top: 0px;
          } 
 		 #wrapper{
 		 width: 100%;
@@ -82,6 +83,91 @@
          99%{color:transparent;}
          100%{color: #fff;}
          }
+         input[type=range]#volume {
+         margin: 5px 0;
+         width: calc(200px + 3em);
+         background-color: transparent;
+         -webkit-appearance: none;
+         }
+         input[type=range]#volume:focus {
+         outline: none;
+         }
+         input[type=range]#volume::-webkit-slider-runnable-track {
+         background: #000000;
+         border: 1px solid #000000;
+         border-radius: 25px;
+         width: 100%;
+         height: 10px;
+         cursor: pointer;
+         }
+         input[type=range]#volume::-webkit-slider-thumb {
+         margin-top: -6px;
+         width: 20px;
+         height: 20px;
+         background: #ffffff;
+         border: 2.5px solid #000000;
+         border-radius: 50px;
+         cursor: pointer;
+         -webkit-appearance: none;
+         }
+         input[type=range]#volume:focus::-webkit-slider-runnable-track {
+         background: #000000;
+         }
+         input[type=range]#volume::-moz-range-track {
+         background: #000000;
+         border: 1px solid #000000;
+         border-radius: 25px;
+         width: 100%;
+         height: 10px;
+         cursor: pointer;
+         }
+         input[type=range]#volume::-moz-range-thumb {
+         width: 20px;
+         height: 20px;
+         background: #ffffff;
+         border: 2.5px solid #000000;
+         border-radius: 50px;
+         cursor: pointer;
+         }
+         input[type=range]#volume::-ms-track {
+         background: transparent;
+         border-color: transparent;
+         border-width: 7.6px 0;
+         color: transparent;
+         width: 100%;
+         height: 10px;
+         cursor: pointer;
+         }
+         input[type=range]#volume::-ms-fill-lower {
+         background: #000000;
+         border: 1px solid #000000;
+         border-radius: 50px;
+         }
+         input[type=range]#volume::-ms-fill-upper {
+         background: #000000;
+         border: 1px solid #000000;
+         border-radius: 50px;
+         }
+         input[type=range]#volume::-ms-thumb {
+         width: 20px;
+         height: 20px;
+         background: #ffffff;
+         border: 2.5px solid #000000;
+         border-radius: 50px;
+         cursor: pointer;
+         margin-top: 0px;
+         }
+         input[type=range]#volume:focus::-ms-fill-lower {
+         background: #000000;
+         }
+         input[type=range]#volume:focus::-ms-fill-upper {
+         background: #000000;
+         }
+        @supports (-ms-ime-align:auto) {
+          input[type=range]#volume {
+            margin: 0;
+          }
+        }
       </style>
       <title>School Countdown | chanrycz.com</title>
    </head>
@@ -110,7 +196,7 @@
          </div>
         <div id="flex-end">
 		    <p id="endtext">Summer hasn't started yet.</p>
-		    <p><input type="image" src="previous_dark.png" value="Previous" onclick="previous()" width="50" height="50" style="padding-right: 1em;outline: none"><input id="play-pause" type="image" src="play_dark.png" value="Play" onclick="playPause()" width="50" height="50" style="outline: none"><input type="image" src="next_dark.png" value="Next" onclick="next()" width="50" height="50" style="padding-left: 1em;outline: none;padding-right: 1em"><input id="loop" type="image" src="loop_all_dark.png" value="Loop" onclick="changeLoop()" width="50" height="50" style="outline: none"></p>
+		    <div style="margin-top: 15px;"><input type="image" src="previous_dark.png" value="Previous" onclick="previous()" width="50" height="50" style="padding-right: 1em;outline: none"><input id="play-pause" type="image" src="play_dark.png" value="Play" onclick="playPause()" width="50" height="50" style="outline: none"><input type="image" src="next_dark.png" value="Next" onclick="next()" width="50" height="50" style="padding-left: 1em;outline: none;padding-right: 1em"><input id="loop" type="image" src="loop_all_dark.png" value="Loop" onclick="changeLoop()" width="50" height="50" style="outline: none"><br><img src="volume-down_dark.png" width="25px" style="position: relative; right: 5px; top: 6px;"><input id="volume" type="range" min="0" max="100" value="100"><img src="volume-up_dark.png" width="25px" style="position: relative; left: 5px; top: 6px;"></div>
 		</div>
 		</div>
 	  </div>
@@ -218,7 +304,11 @@
             next();
           });
         }
-
+        var volSlider = document.getElementById("volume");
+        volSlider.value = 100;
+        volSlider.addEventListener("input", function() {
+            song.volume = (volSlider.value / 100);
+        }, false); 
       </script> 
    </body>
 </html>
