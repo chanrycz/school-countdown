@@ -1,5 +1,5 @@
 # School Countdown
-Countdown Page for End/Start of School with a music player
+Countdown Page for Important Events with a music player
 
 ## Themes
 **There are 4 themes for the countdown:**  
