@@ -295,11 +295,8 @@
   </div>
   <audio id="player" hidden="" src="DankSong4.2.wav" type="audio/wav">
   </audio>
+  <script src="start.js"></script>
   <script>
-    document.getElementById("title").innerHTML = "Start of Break &mdash; Mid-term";
-    document.getElementById("endtext").innerHTML = "Coming Soon!";
-    $.getScript("start.js");
-
     var rainbowColor = setInterval(function () {
       var randomColor = Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = "#" + randomColor;

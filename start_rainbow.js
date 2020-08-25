@@ -69,4 +69,4 @@ if (t < 0) {
      document.getElementById("minute").classList.add("blinking");
      document.getElementById("second").classList.add("blinking");
      document.getElementById("endtext").innerHTML = "Term Break has started!"; } 
-}, 200);
+}, 1000);
