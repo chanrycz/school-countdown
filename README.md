@@ -9,6 +9,6 @@ Light Theme - _light.html_
 Rainbow Theme (***Epilepsy Warning***) - _rainbow.html_  
 
 ## Versions
-**There are 2 versions for the countdown:**
-Device Time version - master branch
-Server Time version - server-sync branch
+**There are 2 versions for the countdown:**  
+Device Time version - _master_ branch  
+Server Time version - _server-sync_ branch  
