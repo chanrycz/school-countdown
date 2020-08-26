@@ -7,3 +7,8 @@ Original Theme - _index.html_
 Dark Theme - _dark.html_  
 Light Theme - _light.html_  
 Rainbow Theme (***Epilepsy Warning***) - _rainbow.html_  
+
+## Versions
+**There are 2 versions for the countdown:**
+Device Time version - master branch
+Server Time version - server-sync branch
