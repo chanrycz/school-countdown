@@ -2,7 +2,7 @@
 Countdown Page for an important event with a list of other important events and a music player
 
 ## Themes
-**There are 4 themes for the countdown:**  
+**There are 5 themes for the countdown:**  
 Default Theme - _index.php_  
 Dark Theme - _dark.php_  
 Light Theme - _light.php_  
