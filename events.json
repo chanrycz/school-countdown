@@ -1,0 +1,15 @@
+{
+    "mainEvent": "Christmas Break",
+    "mainEndMessage": "Christmas Break has started",
+    "countDate": "Dec 18, 2020 15:05:00",
+    "otherEventsTitle": "<u>Other Important Info</u>",
+    "otherEvents": [
+        {"name":"Triple Physics Test", "date":"Dec 8, 2020 08:00:00", "seperator": " — "},
+        {"name":"Triple Biology Test", "date":"Dec 10, 2020 13:45:00", "seperator": " — "},
+        {"name":"Economics Test", "date":"Dec 17, 2020 11:10:00", "seperator": " — "},
+        {"name":"<br><u>H1 Accel. Math", "text":"Mock Exam Dates</u>", "seperator":" "},
+        {"name":"Paper 2", "text":"Dec 4 at 11:00 AM", "seperator": " — "},
+        {"name":"Paper 4", "text":"Dec 9 at 08:00 AM", "seperator": " — "},
+        {"name":"Paper 6", "text":"Dec 11 at 12:55 PM", "seperator": " — "}
+    ]
+}
