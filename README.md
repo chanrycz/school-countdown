@@ -7,7 +7,7 @@ Default Theme - _index.php_
 Dark Theme - _dark.php_  
 Light Theme - _light.php_  
 Rainbow Theme (***Epilepsy Warning***) - _rainbow.php_  
-Rainbow Theme (***Epilepsy Warning***) - _communist.php_  
+Communist Theme - _communist.php_  
 
 ## Versions
 **There are 2 versions for the countdown:**  
