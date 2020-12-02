@@ -1,12 +1,13 @@
 # School Countdown
-Countdown Page for Important Events with a music player
+Countdown Page for an important event with a list of other important events and a music player
 
 ## Themes
 **There are 4 themes for the countdown:**  
-Original Theme - _index.html_  
-Dark Theme - _dark.html_  
-Light Theme - _light.html_  
-Rainbow Theme (***Epilepsy Warning***) - _rainbow.html_  
+Default Theme - _index.php_  
+Dark Theme - _dark.php_  
+Light Theme - _light.php_  
+Rainbow Theme (***Epilepsy Warning***) - _rainbow.php_  
+Rainbow Theme (***Epilepsy Warning***) - _communist.php_  
 
 ## Versions
 **There are 2 versions for the countdown:**  
