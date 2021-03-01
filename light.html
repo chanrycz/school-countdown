@@ -1,17 +1,24 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+  <script src="sw.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Informative Clock for Important School Dates">
   <meta name="theme-color" content="#FFFFFF">
   <link rel="manifest" href="manifest.json">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"></noscript>
   <title>School Countdown - Light | chanrycz.com</title>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <meta name="robots" content="noindex, nofollow" />
+  <link rel="preload" href="fontello/css/fontello.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="fontello/css/fontello.css"></noscript>
+  <link rel="preload" href="https://chanrycz.com/offline.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://chanrycz.com/offline.min.css"></noscript>
   <style>
     :root {
         --main-bg-color: #ffffff;
@@ -88,30 +95,17 @@
       </div>
     </div>
   </div>
-  <audio id="player" hidden="" src="audio/DankSong4.2.wav" type="audio/wav">
+  <audio id="player" hidden="" src="audio/DankSong4.2.mp3">
   </audio>
-  <script src="https://kit.fontawesome.com/9bdb1444d1.js" crossorigin="anonymous"></script>
   <script src="js/start.js"></script>
-  <script defer src="https://chanrycz.com/credits.js"></script>
   <script>
-    const songs = ['audio/DankSong4.2.wav', 'audio/DankSong5.wav', 'audio/DankSong6.wav', 'audio/DankSong7.wav', 'audio/DankSong8.wav', 'audio/DankSong9.wav', 'audio/DankSong10.wav', 'audio/FinalCompositionV2.wav', 'audio/DankSong12.wav', 'audio/DankSong13.wav', 'audio/DankSong15_Rec.wav'];
+    const songs = ['audio/DankSong4.2.mp3', 'audio/DankSong5.mp3', 'audio/DankSong6.mp3', 'audio/DankSong7.mp3', 'audio/DankSong8.mp3', 'audio/DankSong9.mp3', 'audio/DankSong10.mp3', 'audio/FinalCompositionV2.mp3', 'audio/DankSong12.mp3', 'audio/DankSong13.mp3', 'audio/DankSong15_Rec.mp3'];
   </script>
   <script src="js/audio.js"></script>
-  <script defer src="https://9ypnywyv51fd.statuspage.io/embed/script.js"></script>
+  
   <script defer async src="js/utils.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('serviceworker.js')
-                .then(reg => {
-                    console.log('Registration succeeded. Scope is ' + reg.scope);
-                })
-                .catch(registrationError => {
-                    console.log('SW registration failed: ', registrationError);
-                });
-        });
-    }
-  </script>
+  <script async defer src="https://chanrycz.com/credits.js"></script>
+  <script defer src="https://chanrycz.com/offline.min.js"></script>
 </body>
 
 </html>

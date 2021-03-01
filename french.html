@@ -1,17 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+  <script src="sw.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Informative Clock for Important School Dates">
   <meta name="theme-color" content="#4C8BF5">
   <link rel="manifest" href="manifest.json">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"></noscript>
   <title>Compte à rebours de l'école | chanrycz.com</title>
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="fontello/css/fontello.css">
+  <link rel="preload" href="https://chanrycz.com/offline.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://chanrycz.com/offline.min.css"></noscript>
   <style>
     :root {
         --main-bg-color: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
@@ -25,13 +31,13 @@
         --hue-rotate-deg: 0deg;
         --brightness-percent: 0%;
         --contrast-percent: 100%;
-        --dropbtn-color: #ffffff;
-        --dropbtn-border: #ffffff;
-        --dropbtn-hover-color: #eeeeee;
-        --dropbtn-hover-border: #eeeeee;
-        --dropcontent-bg: #fefefe;
-        --dropcontent-color: #000000;
-        --dropcontent-hover-bg: #eeeeee;
+        --dropbtn-color: #000000;
+        --dropbtn-border: #000000;
+        --dropbtn-hover-color: #555555;
+        --dropbtn-hover-border: #555555;
+        --dropcontent-bg: #777777;
+        --dropcontent-color: #ffffff;
+        --dropcontent-hover-bg: #888888;
     }
     .time>span {
         background: #ffffff !important;
@@ -90,30 +96,18 @@
       </div>
     </div>
   </div>
-  <audio id="player" hidden="" src="audio/DankSong4.2.wav" type="audio/wav">
+  </div>
+  <audio id="player" hidden="" src="audio/LaMarseillaise.mp3">
   </audio>
-  <script src="https://kit.fontawesome.com/9bdb1444d1.js" crossorigin="anonymous"></script>
   <script src="js/start_fr.js"></script>
-  <script defer src="https://chanrycz.com/credits.js"></script>
   <script>
-    const songs = ['audio/DankSong4.2.wav', 'audio/DankSong5.wav', 'audio/DankSong6.wav', 'audio/DankSong7.wav', 'audio/DankSong8.wav', 'audio/DankSong9.wav', 'audio/DankSong10.wav', 'audio/FinalCompositionV2.wav', 'audio/DankSong12.wav', 'audio/DankSong13.wav', 'audio/DankSong15_Rec.wav'];
+    const songs = ['audio/LaMarseillaise.mp3'];
   </script>
   <script src="js/audio.js"></script>
-  <script defer src="https://9ypnywyv51fd.statuspage.io/embed/script.js"></script>
+  
   <script defer async src="js/utils.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('serviceworker.js')
-                .then(reg => {
-                    console.log('Registration succeeded. Scope is ' + reg.scope);
-                })
-                .catch(registrationError => {
-                    console.log('SW registration failed: ', registrationError);
-                });
-        });
-    }
-  </script>
+  <script async defer src="https://chanrycz.com/credits.js"></script>
+  <script defer src="https://chanrycz.com/offline.min.js"></script>
 </body>
 
 </html>
