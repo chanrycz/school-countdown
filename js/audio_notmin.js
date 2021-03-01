@@ -11,12 +11,12 @@ song.pause();
 function playPause() {
   if (playing == false) {
     song.play();
-    document.getElementById("play-pause").src = "../img/pause.png";
+    document.getElementById("play-pause").src = "img/pause.png";
     playing = true;
     localStorage.setItem('schoolCountSongNum', songIndex);
   } else if (playing == true) {
     song.pause();
-    document.getElementById("play-pause").src = "../img/play.png";
+    document.getElementById("play-pause").src = "img/play.png";
     playing = false;
     localStorage.setItem('schoolCountSongNum', songIndex);
   }
@@ -24,23 +24,23 @@ function playPause() {
 function changeLoop() {
   if (looping == false) {
     song.loop = true;
-    document.getElementById("loop").src = "../img/loop_1.png";
+    document.getElementById("loop").src = "img/loop_1.png";
     looping = true;
     localStorage.setItem('schoolCountLoop', true);
   } else if (looping == true) {
     song.loop = false;
-    document.getElementById("loop").src = "../img/loop_all.png";
+    document.getElementById("loop").src = "img/loop_all.png";
     looping = false;
     localStorage.setItem('schoolCountLoop', false);
   }
 }
 function changeShuffle() {
   if (shuffling == false) {
-    document.getElementById("shuffle").src = "../img/shuffle-on.png";
+    document.getElementById("shuffle").src = "img/shuffle-on.png";
     shuffling = true;
     localStorage.setItem('schoolCountShuffle', true);
   } else if (shuffling == true) {
-    document.getElementById("shuffle").src = "../img/shuffle-off.png";
+    document.getElementById("shuffle").src = "img/shuffle-off.png";
     shuffling = false;
     localStorage.setItem('schoolCountShuffle', false);
   }

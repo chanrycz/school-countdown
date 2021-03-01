@@ -70,7 +70,7 @@ xhttp.onreadystatechange = function () {
              if (fireworks === true) {
                  var fireworkCSS = document.createElement("link");
                  fireworkCSS.setAttribute("rel", "stylesheet");
-                 fireworkCSS.setAttribute("href", "../css/fireworks.css");
+                 fireworkCSS.setAttribute("href", "css/fireworks.css");
                  document.getElementsByTagName("head")[0].appendChild(fireworkCSS);
                  var pyroDiv = document.createElement("div");
                  pyroDiv.classList.add("pyro");
@@ -108,7 +108,7 @@ xhttp.onreadystatechange = function () {
              if (fireworks === true) {
                  var fireworkCSS = document.createElement("link");
                  fireworkCSS.setAttribute("rel", "stylesheet");
-                 fireworkCSS.setAttribute("href", "../css/fireworks.css");
+                 fireworkCSS.setAttribute("href", "css/fireworks.css");
                  document.getElementsByTagName("head")[0].appendChild(fireworkCSS);
                  var pyroDiv = document.createElement("div");
                  pyroDiv.classList.add("pyro");
@@ -137,5 +137,5 @@ function createSnowFlake() {
 	}, 5000)
 }
 
-xhttp.open("GET", "../settings/events_fr.json", true);
+xhttp.open("GET", "settings/events_fr.json", true);
 xhttp.send();
